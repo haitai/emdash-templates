@@ -64,7 +64,7 @@ Requires a `wrangler.jsonc` with D1 and R2 bindings:
 ```jsonc
 {
 	"name": "my-site",
-	"compatibility_date": "2026-04-01",
+	"compatibility_date": "2026-03-29",
 	"compatibility_flags": ["nodejs_compat"],
 	"assets": { "directory": "./dist" },
 	"d1_databases": [
