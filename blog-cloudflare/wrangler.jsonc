@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "my-emdash-site",
+	"name": "emdash-site",
 	"main": "./src/worker.ts",
 	"compatibility_date": "2026-02-24",
 	"compatibility_flags": ["nodejs_compat"],
@@ -9,7 +9,7 @@
 			"binding": "DB",
 			"database_name": "my-emdash-site",
 			// Run `wrangler d1 create my-emdash-site` and paste the real ID here for deploy
-			"database_id": "local",
+			"database_id": "10aee07a-4eac-4a26-b714-e194730998e9",
 		},
 	],
 	"r2_buckets": [
