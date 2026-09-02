@@ -1,6 +1,6 @@
 import cloudflare from "@astrojs/cloudflare";
 import react from "@astrojs/react";
-import { d1, r2, sandbox } from "@emdash-cms/cloudflare";
+import { d1, r2, sandbox, access } from "@emdash-cms/cloudflare";
 import { formsPlugin } from "@emdash-cms/plugin-forms";
 import webhookNotifier from "@emdash-cms/plugin-webhook-notifier";
 import { defineConfig, fontProviders } from "astro/config";
@@ -22,6 +22,10 @@ export default defineConfig({
 			sandboxed: [webhookNotifier],
 			sandboxRunner: sandbox(),
 			marketplace: "https://marketplace.emdashcms.com",
+			auth: access({
+        		teamDomain: "haitai.cloudflareaccess.com",
+        		audience: "d27468d89a9bf92c11925fe38fb012b1286f35ed210e9693c6ec142863d7b054",
+      		}),
 		}),
 	],
 	fonts: [
